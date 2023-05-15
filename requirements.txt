@@ -1,4 +1,4 @@
 potassium
-torch
+torch==2.0.1
 transformers
 einops
