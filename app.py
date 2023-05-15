@@ -3,13 +3,13 @@ from potassium import Potassium, Request, Response
 from transformers import pipeline
 import torch
 
-app = Potassium("my_app")
+app = Potassium("mpt-7b-storywriter")
 
 # @app.init runs at startup, and loads models into the app's context
 @app.init
 def init():
     device = 0 if torch.cuda.is_available() else -1
-    model = pipeline('fill-mask', model='bert-base-uncased', device=device)
+    model = pipeline('text-generation', model='mosaicml/mpt-7b-storywriter', device=device)
    
     context = {
         "model": model

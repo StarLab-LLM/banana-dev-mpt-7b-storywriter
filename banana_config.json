@@ -1,24 +1,11 @@
 {
-    "name": "",
-    "category": "",
-    "example_input": {
-        "prompt": "Hello I am a [MASK] model."
-    },
-    "example_output": {
-        "outputs":[
-            {
-                "score":0.13177461922168732,
-                "token":4827,
-                "token_str":"fashion",
-                "sequence":"hello i am a fashion model."
-            },
-            {
-                "score":0.1120428815484047,
-                "token":2535,
-                "token_str":"role",
-                "sequence":"hello i am a role model."
-            }
-        ]
-    },
-    "version": "1"
+  "name": "mosaicml/mpt-7b-storywriter",
+  "category": "Natural Language",
+  "example_input": {
+    "prompt": "I have long wanted to write this tale but only now do I find the courage. It is a tale about my dog named Fido. It is the story of how I learned that Fido could talk!\n\nOur story begins when Fido was still a puppy, only 14 months old. It was a calm summer day and we had just enjoyed a walk."
+  },
+  "example_output": {
+    "outputs": "Fido was terribly happy that he could run as far and as fast as he liked in his big new yard.\n\nI remember being very excited by the fact that he was so young because I had heard that this was the ideal age for an American Boxer. As I lay on the grass, drowsy from the sun and the heat, Fido came to sit next to me and start licking the salt off my lips which had somehow ended up sticking out. When I saw him, I thought how fat he seemed. In fact, he looked as if he weren't much more than a wrinkled old sack of meat. I sat up and said, \"Well, you are a big boy now! Why don't you go find something to eat?\"\n\nFido was confused. He was so used to going after tennis balls or retrieving ducks or anything else that went rolling down the road. He did not know where to begin."
+  },
+  "version": "1"
 }
