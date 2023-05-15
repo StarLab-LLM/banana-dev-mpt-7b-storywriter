@@ -5,7 +5,11 @@ from transformers import pipeline
 
 def download_model():
     # do a dry run of loading the huggingface model, which will download weights
-    pipeline('text-generation', model='mosaicml/mpt-7b-storywriter')
+    pipeline(
+        'text-generation',
+        model='mosaicml/mpt-7b-storywriter',
+        trust_remote_code=True
+    )
 
 if __name__ == "__main__":
     download_model()

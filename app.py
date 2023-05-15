@@ -9,7 +9,12 @@ app = Potassium("mpt-7b-storywriter")
 @app.init
 def init():
     device = 0 if torch.cuda.is_available() else -1
-    model = pipeline('text-generation', model='mosaicml/mpt-7b-storywriter', device=device)
+    model = pipeline(
+        'text-generation',
+        model='mosaicml/mpt-7b-storywriter',
+        device=device,
+        trust_remote_code=True
+    )
    
     context = {
         "model": model
